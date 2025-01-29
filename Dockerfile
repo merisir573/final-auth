@@ -1,5 +1,5 @@
-# Use Node.js as the base image
-FROM node:16
+# Use a supported Node.js version
+FROM node:18
 
 # Set the working directory
 WORKDIR /app
@@ -7,13 +7,16 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies, including NestJS CLI
+RUN npm install && npm install @nestjs/cli
 
 # Copy the entire app code
 COPY . .
 
-# Expose the port (default for NestJS)
+# Build the application
+RUN npm run build
+
+# Expose the port for the app
 EXPOSE 3004
 
 # Start the application

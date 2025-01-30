@@ -2,11 +2,11 @@ NOTE: I was unsure whether or not the README had to be in English or not, just i
 
 Github Links (NOTE 2: Due to the nature of Render I uploaded them as seperate repositories):
 
-https://github.com/merisir573/final-auth
+https://github.com/merisir573/final-auth (current one)
 
 https://github.com/merisir573/final-doctor
 
-https://github.com/merisir573/final-gateway (current one)
+https://github.com/merisir573/final-gateway 
 
 https://github.com/merisir573/final-medicine
 
